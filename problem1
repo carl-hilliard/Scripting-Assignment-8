@@ -1,0 +1,53 @@
+#!/bin/bash
+
+# Print the numbers from 1 to 15 using while, until, for.
+
+## Print using a for loop first
+for (( i=1; i<=15; i++ ))
+do
+	echo "For Loop: $i"
+done
+
+
+
+## Now print using a while loop
+i=1
+while [ $i -lt 16 ]
+do
+	echo "While loop: $i"
+	let i++
+done 
+
+
+## Now print using until
+# until will execute a set of commands until a condition is true
+j=1
+until [ ! $j -lt 16 ]
+do
+	echo "until: $j"
+	let j++
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Bonus question
+
+# As dicussed in class, please fix the code. I should be able to print "Between 1 to 10" or 
+# "Between 11 to 20"
+# "Greater than 20"
+# or "less than 1"
+# I can change varTest to any number.
+
+
+# Change the <= to -le, -ge, and -gt
+
+varTest=0
+#ranges 1 to 10, 11 to 20, more
+
+if [[ $varTest -ge 1 && $varTest -le 10 ]]
+then 
+	echo "Between 1 to 10"
+elif [[ $varTest -ge 11 && $varTest -le 20 ]]
+then
+	echo "Between 11 to 20"
+elif [ $varTest -gt 20 ] 
+then 
+	ECHO "Greater than 20"
+else
+	echo "less than 1"
+fi
+
+

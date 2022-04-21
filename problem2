@@ -1,0 +1,61 @@
+#!/bin/bash
+
+#Problem 2: Find the summation of numbers from 20 to 40 using while, until, for.
+
+
+
+## THE SUMMATION OF NUMBERS FROM 20 to 40 SHOULD BE 630
+
+
+# Summation using a while loop first
+# a while loop executes until the condition becomes false
+i=20
+total=0
+while [ $i -le 40 ]
+do
+	total=$((total + i))
+	let i++
+done
+
+echo "summation using while loop: $total"
+
+
+
+## Summation using a for loop
+# create a variable with a scope outside the for loop, so the total can be viewed outside the for loop
+sum=0
+for (( j=20; j<41; j++ ))
+do
+	sum=$((sum + j))
+done 
+echo "Summation using for loop: $sum"
+
+
+
+
+
+
+## Summation using until
+# until will execute a set of commands until a condition is true
+total_unt=0
+temp=20
+until  [ ! $temp -lt 41 ]
+do
+	total_unt=$((total_unt + temp))
+	let temp++
+done
+echo "Summation using until: $total_unt"
+
+
+
+
+
+
+
+
+
+
+
+
+
+

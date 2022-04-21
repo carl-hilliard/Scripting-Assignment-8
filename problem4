@@ -1,0 +1,63 @@
+#!/bin/bash
+
+# Problem 4: Take an input from the user. If the user provides "corpus", print: "Texas A&M University
+# Corpus Christi". If the user provides "Kingsville", print: "Texas A&M University Kingsville". If the user
+# enters "commerce", print "Texas A&M University Commerce". If none of the above, then print 
+# "Texas A&M University"
+
+
+
+# Ask the user where they attend university
+read -p "Where do you attend university?" school
+
+## test the variable school
+
+if [ "$school" == "corpus" ] 
+then 
+	echo "Texas A&M University Corpus Christi"
+elif [ "$school" == "Kingsville" ] 
+then 
+	echo "Texas A&M University Kingsville"
+elif [ "$school" == "commerce" ] 
+then 
+	echo "Texas A&M University Commerce"
+else
+	echo "Texas A&M University"
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

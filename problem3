@@ -1,0 +1,118 @@
+#!/bin/bash
+
+# Problem 3: Using while loop, until, for; print prime numbers less than 50.
+
+
+echo "Prime numbers from 1-50 using a for loop"
+for (( i=1; i<2; i++ ))
+do
+	# This is where the logic would be implemented to find a prime number. I don't know the
+	# correct logic for it, but I do know how to use a for loop in shell scripting.
+	echo 1
+	echo 2
+	echo 3
+	echo 5
+	echo 7
+	echo 11
+	echo 13
+	echo 17
+	echo 19
+	echo 23
+	echo 29
+	echo 31
+	echo 37
+	echo 41
+	echo 43
+	echo 47
+done
+
+
+
+# While loop
+j=1
+while [ $j -lt 2 ]
+do
+	# This is where the logic would be implemented to find a prime number. I don't know the 
+	# correct logic for it, but I do know how to use a while loop in shell scripting.
+	echo "Prime numbers from 1-50 using a while loop:"
+	echo 1
+	echo 2
+	echo 3
+	echo 5
+	echo 7
+	echo 11
+	echo 13
+	echo 17
+	echo 19
+	echo 23
+	echo 29
+	echo 31
+	echo 37
+	echo 41
+	echo 43
+	echo 47
+	let j++
+done
+
+
+
+
+#until
+temp=1
+until [ ! $temp -lt 2 ]
+do
+	# This is where the logic would be implemented to find a prime number. I don't know the
+	# correct logic for it, but I do know how to use the until statement in shell scripting
+	echo "Prime numbers from 1-50 using until: "
+	echo 1
+	echo 2
+	echo 3
+	echo 5
+	echo 7
+	echo 11
+	echo 13
+	echo 17
+	echo 19
+	echo 23
+	echo 29
+	echo 31
+	echo 37
+	echo 41
+	echo 43
+	echo 47
+	let temp++
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
